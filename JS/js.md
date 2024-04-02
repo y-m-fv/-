@@ -148,7 +148,7 @@ function functionName(参数1，参数2.....){//要执行的代码}
 
 ​		![image-20240401224714787](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240401224714787.png)![image-20240401224727801](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240401224727801.png)
 
-2、string
+###### 2、string
 
 ![image-20240401225625606](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240401225625606.png)
 
@@ -156,7 +156,118 @@ function functionName(参数1，参数2.....){//要执行的代码}
 
 ![image-20240401230639937](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240401230639937.png)![image-20240401230608113](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240401230608113.png)
 
+###### 3、json
+
+```
+var 对象名 = {                                    var user = {
+	属性名:属性值1,                                    name:"Tom",
+	属性名:属性值2,                                    age:20,
+	属性名:属性值3,                                    gender:"male",
+	函数名称:function(形参列表){}                       eat:function() {alert("用膳~");}
+}                                                }
+```
+
+```
+调用格式：
+对象名.属性名;         console.log(user.name);
+对象名.函数名();       user.eat();
+```
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402103222184.png" alt="image-20240402103222184" style="zoom:67%;" />
+
+```
+JSON:
+var userStr = '{"name":"Jerry","age":18,"addr":["北京","上海","西安"]}';
+
+value的数据类型：
+数字(整数或浮点数)
+字符串(在双引号中)
+逻辑值(true 或 false)
+数组(在方括号中)
+对象(在花括号中)
+null
+
+JSON字符串转为JS对象
+	var jsObject = JSON.parse(userStr)
+JS对象转为JSON字符串
+	var jsonStr = JSON.stringify(jsObject);
+```
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402105051617.png" alt="image-20240402105051617" style="zoom:80%;float:left" />
+
+###### 4、BOM
+
+> window：浏览器窗口对象  √
+>
+> navigator：浏览器对象
+>
+> screen:屏幕对象
+>
+> history：历史记录对象
+>
+> location：地址栏对象  √
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402110509442.png" alt="image-20240402110509442" style="zoom:80%;" />
+
+------
+
+![image-20240402112418139](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402112418139.png)
+
+------
+
+![image-20240402112436343](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402112436343.png)
+
+###### 5、DOM
+
+![image-20240402114154211](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402114154211.png)
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402114241967.png" alt="image-20240402114241967" style="zoom:67%;" />
+
+------
+
+```
+根据id属性获取，返回单个element对象
+	var h1 = document.getElementById('h1');
+根据标签名称获取，返回element对象数组
+	var divs = document.getElementsByTagName('divs');
+根据name属性值获取，返回Element对象数组
+	var hobbys = document.getElementByName('hobby');
+根据class属性值获取，返回element对象数组
+	var class = document.getElementByClassName('cls');
+```
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402121148739.png" alt="image-20240402121148739" style="zoom:80%;float:left" /><img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402121218727.png" alt="image-20240402121218727" style="zoom:80%;" />
+
+------
+
+> 小案例
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402154408115.png" alt="image-20240402154408115" style="zoom:80%;float:left" />![image-20240402154430164](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402154430164.png)
 
 
 
 
+
+
+
+
+
+###### 6、js事件监听
+
+<img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402154640001.png" alt="image-20240402154640001" style="zoom:67%;float:left" /><img src="C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402155448241.png" alt="image-20240402155448241" style="zoom:67%;" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+![image-20240402155519781](C:\Users\fbb\AppData\Roaming\Typora\typora-user-images\image-20240402155519781.png)
+
+> 案例：16
